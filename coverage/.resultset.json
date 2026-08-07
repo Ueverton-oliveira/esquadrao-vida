@@ -21,6 +21,22 @@
           null
         ]
       },
+      "/app/app/controllers/public/about_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/app/app/controllers/public/contact_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/app/app/controllers/public/help_requests_controller.rb": {
         "lines": [
           null,
@@ -43,10 +59,30 @@
           null
         ]
       },
+      "/app/app/controllers/public/how_it_works_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/app/app/helpers/application_helper.rb": {
         "lines": [
           null,
           null,
+          1,
+          null
+        ]
+      },
+      "/app/app/helpers/public/about_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/app/app/helpers/public/contact_helper.rb": {
+        "lines": [
           1,
           null
         ]
@@ -71,6 +107,12 @@
           1,
           1,
           null,
+          null
+        ]
+      },
+      "/app/app/helpers/public/how_it_works_helper.rb": {
+        "lines": [
+          1,
           null
         ]
       },
@@ -107,6 +149,6 @@
         ]
       }
     },
-    "timestamp": 1786128076
+    "timestamp": 1786129549
   }
 }
