@@ -1,6 +1,16 @@
 {
   "RSpec": {
     "coverage": {
+      "/app/app/components/public/navbar_component.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/app/app/controllers/application_controller.rb": {
         "lines": [
           null,
@@ -11,10 +21,25 @@
           null
         ]
       },
+      "/app/app/controllers/public/help_requests_controller.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/app/app/controllers/public/home_controller.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
+          1,
+          null,
           null
         ]
       },
@@ -26,9 +51,26 @@
           null
         ]
       },
+      "/app/app/helpers/public/help_requests_helper.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          6,
+          null,
+          null,
+          null
+        ]
+      },
       "/app/app/helpers/public/home_helper.rb": {
         "lines": [
+          null,
+          null,
           1,
+          1,
+          null,
           null
         ]
       },
@@ -36,41 +78,35 @@
         "lines": [
           null,
           null,
-          0,
+          1,
           null,
           null,
           null,
           null,
           null,
           null
-        ],
-        "branches": {},
-        "methods": {}
+        ]
       },
       "/app/app/mailers/application_mailer.rb": {
         "lines": [
           null,
           null,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
           null
-        ],
-        "branches": {},
-        "methods": {}
+        ]
       },
       "/app/app/models/application_record.rb": {
         "lines": [
           null,
           null,
-          0,
-          0,
+          1,
+          1,
           null
-        ],
-        "branches": {},
-        "methods": {}
+        ]
       }
     },
-    "timestamp": 1786125843
+    "timestamp": 1786128076
   }
 }

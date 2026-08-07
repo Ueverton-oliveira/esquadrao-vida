@@ -5,9 +5,9 @@
     "simplecov_version": "1.0.3",
     "command_name": "RSpec",
     "project_name": "App",
-    "timestamp": "2026-08-07T18:04:03.385+00:00",
+    "timestamp": "2026-08-07T18:41:16.755+00:00",
     "root": "/app",
-    "commit": "a86f270f191b0f13b4576cbbcfa62ffc1f40af29",
+    "commit": "4d638b23ca85d3b41d0dcc73a19680c6c7e99f96",
     "primary_coverage": "line",
     "line_coverage": true,
     "branch_coverage": false,
@@ -15,15 +15,38 @@
   },
   "total": {
     "lines": {
-      "covered": 6,
-      "missed": 6,
-      "omitted": 23,
-      "total": 12,
-      "percent": 50.0,
-      "strength": 0.5
+      "covered": 23,
+      "missed": 0,
+      "omitted": 42,
+      "total": 23,
+      "percent": 100.0,
+      "strength": 1.2173913043478262
     }
   },
   "coverage": {
+    "app/components/public/navbar_component.rb": {
+      "source": [
+        "# frozen_string_literal: true",
+        "",
+        "module Public",
+        "  class NavbarComponent < ViewComponent::Base",
+        "  end",
+        "end"
+      ],
+      "lines": [
+        null,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "lines_covered_percent": 100.0,
+      "covered_lines": 2,
+      "missed_lines": 0,
+      "omitted_lines": 4,
+      "total_lines": 2
+    },
     "app/controllers/application_controller.rb": {
       "source": [
         "# frozen_string_literal: true",
@@ -47,22 +70,55 @@
       "omitted_lines": 4,
       "total_lines": 2
     },
-    "app/controllers/public/home_controller.rb": {
+    "app/controllers/public/help_requests_controller.rb": {
       "source": [
-        "class Public::HomeController < ApplicationController",
-        "  def index; end",
+        "# frozen_string_literal: true",
+        "",
+        "module Public",
+        "  class HelpRequestsController < ApplicationController",
+        "    def new; end",
+        "  end",
         "end"
       ],
       "lines": [
+        null,
+        null,
         1,
         1,
+        1,
+        null,
         null
       ],
       "lines_covered_percent": 100.0,
-      "covered_lines": 2,
+      "covered_lines": 3,
       "missed_lines": 0,
-      "omitted_lines": 1,
-      "total_lines": 2
+      "omitted_lines": 4,
+      "total_lines": 3
+    },
+    "app/controllers/public/home_controller.rb": {
+      "source": [
+        "# frozen_string_literal: true",
+        "",
+        "module Public",
+        "  class HomeController < ApplicationController",
+        "    def index; end",
+        "  end",
+        "end"
+      ],
+      "lines": [
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "lines_covered_percent": 100.0,
+      "covered_lines": 3,
+      "missed_lines": 0,
+      "omitted_lines": 4,
+      "total_lines": 3
     },
     "app/helpers/application_helper.rb": {
       "source": [
@@ -83,20 +139,57 @@
       "omitted_lines": 3,
       "total_lines": 1
     },
-    "app/helpers/public/home_helper.rb": {
+    "app/helpers/public/help_requests_helper.rb": {
       "source": [
-        "module Public::HomeHelper",
+        "# frozen_string_literal: true",
+        "",
+        "module Public",
+        "  module HelpRequestsHelper",
+        "    def help_request_page_title",
+        "      'Preciso de Ajuda'",
+        "    end",
+        "  end",
         "end"
       ],
       "lines": [
+        null,
+        null,
         1,
+        1,
+        1,
+        6,
+        null,
+        null,
         null
       ],
       "lines_covered_percent": 100.0,
-      "covered_lines": 1,
+      "covered_lines": 4,
       "missed_lines": 0,
-      "omitted_lines": 1,
-      "total_lines": 1
+      "omitted_lines": 5,
+      "total_lines": 4
+    },
+    "app/helpers/public/home_helper.rb": {
+      "source": [
+        "# frozen_string_literal: true",
+        "",
+        "module Public",
+        "  module HomeHelper",
+        "  end",
+        "end"
+      ],
+      "lines": [
+        null,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "lines_covered_percent": 100.0,
+      "covered_lines": 2,
+      "missed_lines": 0,
+      "omitted_lines": 4,
+      "total_lines": 2
     },
     "app/jobs/application_job.rb": {
       "source": [
@@ -113,7 +206,7 @@
       "lines": [
         null,
         null,
-        0,
+        1,
         null,
         null,
         null,
@@ -121,9 +214,9 @@
         null,
         null
       ],
-      "lines_covered_percent": 0.0,
-      "covered_lines": 0,
-      "missed_lines": 1,
+      "lines_covered_percent": 100.0,
+      "covered_lines": 1,
+      "missed_lines": 0,
       "omitted_lines": 8,
       "total_lines": 1
     },
@@ -139,14 +232,14 @@
       "lines": [
         null,
         null,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
         null
       ],
-      "lines_covered_percent": 0.0,
-      "covered_lines": 0,
-      "missed_lines": 3,
+      "lines_covered_percent": 100.0,
+      "covered_lines": 3,
+      "missed_lines": 0,
       "omitted_lines": 3,
       "total_lines": 3
     },
@@ -161,13 +254,13 @@
       "lines": [
         null,
         null,
-        0,
-        0,
+        1,
+        1,
         null
       ],
-      "lines_covered_percent": 0.0,
-      "covered_lines": 0,
-      "missed_lines": 2,
+      "lines_covered_percent": 100.0,
+      "covered_lines": 2,
+      "missed_lines": 0,
       "omitted_lines": 3,
       "total_lines": 2
     }
@@ -175,15 +268,16 @@
   "groups": {
     "Controllers": {
       "lines": {
-        "covered": 4,
+        "covered": 8,
         "missed": 0,
-        "omitted": 5,
-        "total": 4,
+        "omitted": 12,
+        "total": 8,
         "percent": 100.0,
         "strength": 1.0
       },
       "files": [
         "app/controllers/application_controller.rb",
+        "app/controllers/public/help_requests_controller.rb",
         "app/controllers/public/home_controller.rb"
       ]
     },
@@ -200,12 +294,12 @@
     },
     "Models": {
       "lines": {
-        "covered": 0,
-        "missed": 2,
+        "covered": 2,
+        "missed": 0,
         "omitted": 3,
         "total": 2,
-        "percent": 0.0,
-        "strength": 0.0
+        "percent": 100.0,
+        "strength": 1.0
       },
       "files": [
         "app/models/application_record.rb"
@@ -213,12 +307,12 @@
     },
     "Mailers": {
       "lines": {
-        "covered": 0,
-        "missed": 3,
+        "covered": 3,
+        "missed": 0,
         "omitted": 3,
         "total": 3,
-        "percent": 0.0,
-        "strength": 0.0
+        "percent": 100.0,
+        "strength": 1.0
       },
       "files": [
         "app/mailers/application_mailer.rb"
@@ -226,26 +320,27 @@
     },
     "Helpers": {
       "lines": {
-        "covered": 2,
+        "covered": 7,
         "missed": 0,
-        "omitted": 4,
-        "total": 2,
+        "omitted": 12,
+        "total": 7,
         "percent": 100.0,
-        "strength": 1.0
+        "strength": 1.7142857142857142
       },
       "files": [
         "app/helpers/application_helper.rb",
+        "app/helpers/public/help_requests_helper.rb",
         "app/helpers/public/home_helper.rb"
       ]
     },
     "Jobs": {
       "lines": {
-        "covered": 0,
-        "missed": 1,
+        "covered": 1,
+        "missed": 0,
         "omitted": 8,
         "total": 1,
-        "percent": 0.0,
-        "strength": 0.0
+        "percent": 100.0,
+        "strength": 1.0
       },
       "files": [
         "app/jobs/application_job.rb"
@@ -261,6 +356,19 @@
         "strength": 0.0
       },
       "files": []
+    },
+    "Ungrouped": {
+      "lines": {
+        "covered": 2,
+        "missed": 0,
+        "omitted": 4,
+        "total": 2,
+        "percent": 100.0,
+        "strength": 1.0
+      },
+      "files": [
+        "app/components/public/navbar_component.rb"
+      ]
     }
   },
   "errors": {}
