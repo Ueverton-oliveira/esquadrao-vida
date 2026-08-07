@@ -5,9 +5,9 @@
     "simplecov_version": "1.0.3",
     "command_name": "RSpec",
     "project_name": "App",
-    "timestamp": "2026-08-07T18:41:16.755+00:00",
+    "timestamp": "2026-08-07T19:05:49.441+00:00",
     "root": "/app",
-    "commit": "4d638b23ca85d3b41d0dcc73a19680c6c7e99f96",
+    "commit": "ffe411160711dbfaa2af799ebd2e952e1ec01032",
     "primary_coverage": "line",
     "line_coverage": true,
     "branch_coverage": false,
@@ -15,12 +15,12 @@
   },
   "total": {
     "lines": {
-      "covered": 23,
+      "covered": 32,
       "missed": 0,
-      "omitted": 42,
-      "total": 23,
+      "omitted": 51,
+      "total": 32,
       "percent": 100.0,
-      "strength": 1.2173913043478262
+      "strength": 1.15625
     }
   },
   "coverage": {
@@ -68,6 +68,44 @@
       "covered_lines": 2,
       "missed_lines": 0,
       "omitted_lines": 4,
+      "total_lines": 2
+    },
+    "app/controllers/public/about_controller.rb": {
+      "source": [
+        "class Public::AboutController < ApplicationController",
+        "  def show",
+        "  end",
+        "end"
+      ],
+      "lines": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "lines_covered_percent": 100.0,
+      "covered_lines": 2,
+      "missed_lines": 0,
+      "omitted_lines": 2,
+      "total_lines": 2
+    },
+    "app/controllers/public/contact_controller.rb": {
+      "source": [
+        "class Public::ContactController < ApplicationController",
+        "  def show",
+        "  end",
+        "end"
+      ],
+      "lines": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "lines_covered_percent": 100.0,
+      "covered_lines": 2,
+      "missed_lines": 0,
+      "omitted_lines": 2,
       "total_lines": 2
     },
     "app/controllers/public/help_requests_controller.rb": {
@@ -120,6 +158,25 @@
       "omitted_lines": 4,
       "total_lines": 3
     },
+    "app/controllers/public/how_it_works_controller.rb": {
+      "source": [
+        "class Public::HowItWorksController < ApplicationController",
+        "  def show",
+        "  end",
+        "end"
+      ],
+      "lines": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "lines_covered_percent": 100.0,
+      "covered_lines": 2,
+      "missed_lines": 0,
+      "omitted_lines": 2,
+      "total_lines": 2
+    },
     "app/helpers/application_helper.rb": {
       "source": [
         "# frozen_string_literal: true",
@@ -137,6 +194,36 @@
       "covered_lines": 1,
       "missed_lines": 0,
       "omitted_lines": 3,
+      "total_lines": 1
+    },
+    "app/helpers/public/about_helper.rb": {
+      "source": [
+        "module Public::AboutHelper",
+        "end"
+      ],
+      "lines": [
+        1,
+        null
+      ],
+      "lines_covered_percent": 100.0,
+      "covered_lines": 1,
+      "missed_lines": 0,
+      "omitted_lines": 1,
+      "total_lines": 1
+    },
+    "app/helpers/public/contact_helper.rb": {
+      "source": [
+        "module Public::ContactHelper",
+        "end"
+      ],
+      "lines": [
+        1,
+        null
+      ],
+      "lines_covered_percent": 100.0,
+      "covered_lines": 1,
+      "missed_lines": 0,
+      "omitted_lines": 1,
       "total_lines": 1
     },
     "app/helpers/public/help_requests_helper.rb": {
@@ -190,6 +277,21 @@
       "missed_lines": 0,
       "omitted_lines": 4,
       "total_lines": 2
+    },
+    "app/helpers/public/how_it_works_helper.rb": {
+      "source": [
+        "module Public::HowItWorksHelper",
+        "end"
+      ],
+      "lines": [
+        1,
+        null
+      ],
+      "lines_covered_percent": 100.0,
+      "covered_lines": 1,
+      "missed_lines": 0,
+      "omitted_lines": 1,
+      "total_lines": 1
     },
     "app/jobs/application_job.rb": {
       "source": [
@@ -268,17 +370,20 @@
   "groups": {
     "Controllers": {
       "lines": {
-        "covered": 8,
+        "covered": 14,
         "missed": 0,
-        "omitted": 12,
-        "total": 8,
+        "omitted": 18,
+        "total": 14,
         "percent": 100.0,
         "strength": 1.0
       },
       "files": [
         "app/controllers/application_controller.rb",
+        "app/controllers/public/about_controller.rb",
+        "app/controllers/public/contact_controller.rb",
         "app/controllers/public/help_requests_controller.rb",
-        "app/controllers/public/home_controller.rb"
+        "app/controllers/public/home_controller.rb",
+        "app/controllers/public/how_it_works_controller.rb"
       ]
     },
     "Channels": {
@@ -320,17 +425,20 @@
     },
     "Helpers": {
       "lines": {
-        "covered": 7,
+        "covered": 10,
         "missed": 0,
-        "omitted": 12,
-        "total": 7,
+        "omitted": 15,
+        "total": 10,
         "percent": 100.0,
-        "strength": 1.7142857142857142
+        "strength": 1.5
       },
       "files": [
         "app/helpers/application_helper.rb",
+        "app/helpers/public/about_helper.rb",
+        "app/helpers/public/contact_helper.rb",
         "app/helpers/public/help_requests_helper.rb",
-        "app/helpers/public/home_helper.rb"
+        "app/helpers/public/home_helper.rb",
+        "app/helpers/public/how_it_works_helper.rb"
       ]
     },
     "Jobs": {
