@@ -5,9 +5,9 @@
     "simplecov_version": "1.0.3",
     "command_name": "RSpec",
     "project_name": "App",
-    "timestamp": "2026-08-07T19:05:49.441+00:00",
+    "timestamp": "2026-08-13T18:17:33.819+00:00",
     "root": "/app",
-    "commit": "ffe411160711dbfaa2af799ebd2e952e1ec01032",
+    "commit": "495a7c0362f9ce26890432b5c62b8aafc7b189b2",
     "primary_coverage": "line",
     "line_coverage": true,
     "branch_coverage": false,
@@ -15,12 +15,12 @@
   },
   "total": {
     "lines": {
-      "covered": 32,
-      "missed": 0,
-      "omitted": 51,
-      "total": 32,
-      "percent": 100.0,
-      "strength": 1.15625
+      "covered": 21,
+      "missed": 21,
+      "omitted": 57,
+      "total": 42,
+      "percent": 50.0,
+      "strength": 0.6904761904761905
     }
   },
   "coverage": {
@@ -36,14 +36,14 @@
       "lines": [
         null,
         null,
-        1,
-        1,
+        0,
+        0,
         null,
         null
       ],
-      "lines_covered_percent": 100.0,
-      "covered_lines": 2,
-      "missed_lines": 0,
+      "lines_covered_percent": 0.0,
+      "covered_lines": 0,
+      "missed_lines": 2,
       "omitted_lines": 4,
       "total_lines": 2
     },
@@ -59,14 +59,14 @@
       "lines": [
         null,
         null,
-        1,
+        0,
         null,
-        1,
+        0,
         null
       ],
-      "lines_covered_percent": 100.0,
-      "covered_lines": 2,
-      "missed_lines": 0,
+      "lines_covered_percent": 0.0,
+      "covered_lines": 0,
+      "missed_lines": 2,
       "omitted_lines": 4,
       "total_lines": 2
     },
@@ -78,14 +78,14 @@
         "end"
       ],
       "lines": [
-        1,
-        1,
+        0,
+        0,
         null,
         null
       ],
-      "lines_covered_percent": 100.0,
-      "covered_lines": 2,
-      "missed_lines": 0,
+      "lines_covered_percent": 0.0,
+      "covered_lines": 0,
+      "missed_lines": 2,
       "omitted_lines": 2,
       "total_lines": 2
     },
@@ -97,14 +97,14 @@
         "end"
       ],
       "lines": [
-        1,
-        1,
+        0,
+        0,
         null,
         null
       ],
-      "lines_covered_percent": 100.0,
-      "covered_lines": 2,
-      "missed_lines": 0,
+      "lines_covered_percent": 0.0,
+      "covered_lines": 0,
+      "missed_lines": 2,
       "omitted_lines": 2,
       "total_lines": 2
     },
@@ -121,15 +121,15 @@
       "lines": [
         null,
         null,
-        1,
-        1,
-        1,
+        0,
+        0,
+        0,
         null,
         null
       ],
-      "lines_covered_percent": 100.0,
-      "covered_lines": 3,
-      "missed_lines": 0,
+      "lines_covered_percent": 0.0,
+      "covered_lines": 0,
+      "missed_lines": 3,
       "omitted_lines": 4,
       "total_lines": 3
     },
@@ -146,15 +146,15 @@
       "lines": [
         null,
         null,
-        1,
-        1,
-        1,
+        0,
+        0,
+        0,
         null,
         null
       ],
-      "lines_covered_percent": 100.0,
-      "covered_lines": 3,
-      "missed_lines": 0,
+      "lines_covered_percent": 0.0,
+      "covered_lines": 0,
+      "missed_lines": 3,
       "omitted_lines": 4,
       "total_lines": 3
     },
@@ -166,14 +166,14 @@
         "end"
       ],
       "lines": [
-        1,
-        1,
+        0,
+        0,
         null,
         null
       ],
-      "lines_covered_percent": 100.0,
-      "covered_lines": 2,
-      "missed_lines": 0,
+      "lines_covered_percent": 0.0,
+      "covered_lines": 0,
+      "missed_lines": 2,
       "omitted_lines": 2,
       "total_lines": 2
     },
@@ -244,14 +244,14 @@
         1,
         1,
         1,
-        6,
+        0,
         null,
         null,
         null
       ],
-      "lines_covered_percent": 100.0,
-      "covered_lines": 4,
-      "missed_lines": 0,
+      "lines_covered_percent": 75.0,
+      "covered_lines": 3,
+      "missed_lines": 1,
       "omitted_lines": 5,
       "total_lines": 4
     },
@@ -308,7 +308,7 @@
       "lines": [
         null,
         null,
-        1,
+        0,
         null,
         null,
         null,
@@ -316,9 +316,9 @@
         null,
         null
       ],
-      "lines_covered_percent": 100.0,
-      "covered_lines": 1,
-      "missed_lines": 0,
+      "lines_covered_percent": 0.0,
+      "covered_lines": 0,
+      "missed_lines": 1,
       "omitted_lines": 8,
       "total_lines": 1
     },
@@ -334,14 +334,14 @@
       "lines": [
         null,
         null,
-        1,
-        1,
-        1,
+        0,
+        0,
+        0,
         null
       ],
-      "lines_covered_percent": 100.0,
-      "covered_lines": 3,
-      "missed_lines": 0,
+      "lines_covered_percent": 0.0,
+      "covered_lines": 0,
+      "missed_lines": 3,
       "omitted_lines": 3,
       "total_lines": 3
     },
@@ -365,17 +365,60 @@
       "missed_lines": 0,
       "omitted_lines": 3,
       "total_lines": 2
+    },
+    "app/models/room.rb": {
+      "source": [
+        "class Room < ApplicationRecord",
+        "  GOOGLE_MEET_URL = %r{\\Ahttps://meet\\.google\\.com/[a-z0-9-]+\\z}i",
+        "",
+        "  validates :name, presence: true",
+        "  validates :meeting_url, presence: true",
+        "  validate :meeting_url_must_be_google_meet",
+        "",
+        "  private",
+        "",
+        "  def meeting_url_must_be_google_meet",
+        "    return if meeting_url.blank?",
+        "    return if meeting_url.match?(GOOGLE_MEET_URL)",
+        "",
+        "    errors.add(:meeting_url, \"must be a Google Meet URL\")",
+        "  end",
+        "end"
+      ],
+      "lines": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        6,
+        4,
+        null,
+        1,
+        null,
+        null
+      ],
+      "lines_covered_percent": 100.0,
+      "covered_lines": 10,
+      "missed_lines": 0,
+      "omitted_lines": 6,
+      "total_lines": 10
     }
   },
   "groups": {
     "Controllers": {
       "lines": {
-        "covered": 14,
-        "missed": 0,
+        "covered": 0,
+        "missed": 14,
         "omitted": 18,
         "total": 14,
-        "percent": 100.0,
-        "strength": 1.0
+        "percent": 0.0,
+        "strength": 0.0
       },
       "files": [
         "app/controllers/application_controller.rb",
@@ -399,25 +442,26 @@
     },
     "Models": {
       "lines": {
-        "covered": 2,
+        "covered": 12,
         "missed": 0,
-        "omitted": 3,
-        "total": 2,
+        "omitted": 9,
+        "total": 12,
         "percent": 100.0,
-        "strength": 1.0
+        "strength": 1.6666666666666667
       },
       "files": [
-        "app/models/application_record.rb"
+        "app/models/application_record.rb",
+        "app/models/room.rb"
       ]
     },
     "Mailers": {
       "lines": {
-        "covered": 3,
-        "missed": 0,
+        "covered": 0,
+        "missed": 3,
         "omitted": 3,
         "total": 3,
-        "percent": 100.0,
-        "strength": 1.0
+        "percent": 0.0,
+        "strength": 0.0
       },
       "files": [
         "app/mailers/application_mailer.rb"
@@ -425,12 +469,12 @@
     },
     "Helpers": {
       "lines": {
-        "covered": 10,
-        "missed": 0,
+        "covered": 9,
+        "missed": 1,
         "omitted": 15,
         "total": 10,
-        "percent": 100.0,
-        "strength": 1.5
+        "percent": 90.0,
+        "strength": 0.9
       },
       "files": [
         "app/helpers/application_helper.rb",
@@ -443,12 +487,12 @@
     },
     "Jobs": {
       "lines": {
-        "covered": 1,
-        "missed": 0,
+        "covered": 0,
+        "missed": 1,
         "omitted": 8,
         "total": 1,
-        "percent": 100.0,
-        "strength": 1.0
+        "percent": 0.0,
+        "strength": 0.0
       },
       "files": [
         "app/jobs/application_job.rb"
@@ -467,12 +511,12 @@
     },
     "Ungrouped": {
       "lines": {
-        "covered": 2,
-        "missed": 0,
+        "covered": 0,
+        "missed": 2,
         "omitted": 4,
         "total": 2,
-        "percent": 100.0,
-        "strength": 1.0
+        "percent": 0.0,
+        "strength": 0.0
       },
       "files": [
         "app/components/public/navbar_component.rb"

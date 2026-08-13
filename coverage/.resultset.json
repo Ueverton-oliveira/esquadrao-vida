@@ -5,67 +5,91 @@
         "lines": [
           null,
           null,
-          1,
-          1,
+          0,
+          0,
           null,
           null
-        ]
+        ],
+        "branches": {},
+        "methods": {}
       },
       "/app/app/controllers/application_controller.rb": {
         "lines": [
           null,
           null,
-          1,
+          0,
           null,
-          1,
+          0,
           null
-        ]
+        ],
+        "branches": {},
+        "methods": {}
       },
       "/app/app/controllers/public/about_controller.rb": {
         "lines": [
-          1,
-          1,
+          0,
+          0,
           null,
           null
-        ]
+        ],
+        "branches": {},
+        "methods": {
+          "[\"Public::AboutController\", :show, 2, 2, 3, 5]": 0
+        }
       },
       "/app/app/controllers/public/contact_controller.rb": {
         "lines": [
-          1,
-          1,
+          0,
+          0,
           null,
           null
-        ]
+        ],
+        "branches": {},
+        "methods": {
+          "[\"Public::ContactController\", :show, 2, 2, 3, 5]": 0
+        }
       },
       "/app/app/controllers/public/help_requests_controller.rb": {
         "lines": [
           null,
           null,
-          1,
-          1,
-          1,
+          0,
+          0,
+          0,
           null,
           null
-        ]
+        ],
+        "branches": {},
+        "methods": {
+          "[\"HelpRequestsController\", :new, 5, 4, 5, 16]": 0
+        }
       },
       "/app/app/controllers/public/home_controller.rb": {
         "lines": [
           null,
           null,
-          1,
-          1,
-          1,
+          0,
+          0,
+          0,
           null,
           null
-        ]
+        ],
+        "branches": {},
+        "methods": {
+          "[\"HomeController\", :index, 5, 4, 5, 18]": 0
+        }
       },
       "/app/app/controllers/public/how_it_works_controller.rb": {
         "lines": [
-          1,
-          1,
+          0,
+          0,
           null,
           null
-        ]
+        ],
+        "branches": {},
+        "methods": {
+          "[\"Public::HowItWorksController\", :show, 2, 2, 3, 5]": 0
+        }
       },
       "/app/app/helpers/application_helper.rb": {
         "lines": [
@@ -94,7 +118,7 @@
           1,
           1,
           1,
-          6,
+          0,
           null,
           null,
           null
@@ -120,24 +144,28 @@
         "lines": [
           null,
           null,
-          1,
+          0,
           null,
           null,
           null,
           null,
           null,
           null
-        ]
+        ],
+        "branches": {},
+        "methods": {}
       },
       "/app/app/mailers/application_mailer.rb": {
         "lines": [
           null,
           null,
-          1,
-          1,
-          1,
+          0,
+          0,
+          0,
           null
-        ]
+        ],
+        "branches": {},
+        "methods": {}
       },
       "/app/app/models/application_record.rb": {
         "lines": [
@@ -147,8 +175,28 @@
           1,
           null
         ]
+      },
+      "/app/app/models/room.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          6,
+          4,
+          null,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1786129549
+    "timestamp": 1786645053
   }
 }
