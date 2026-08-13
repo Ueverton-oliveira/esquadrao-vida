@@ -5,21 +5,67 @@
         "lines": [
           null,
           null,
-          1,
-          1,
+          0,
+          0,
           null,
           null
-        ]
+        ],
+        "branches": {},
+        "methods": {}
       },
       "/app/app/controllers/admin/dashboard_controller.rb": {
         "lines": [
           1,
           1,
           1,
+          5,
+          5,
+          5,
           null,
           null,
           null
         ]
+      },
+      "/app/app/controllers/admin/rooms_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          null,
+          null,
+          0,
+          null,
+          null,
+          0,
+          null,
+          null,
+          0,
+          null,
+          null,
+          null
+        ],
+        "branches": {},
+        "methods": {
+          "[\"RoomsController\", :index, 3, 4, 4, 7]": 0,
+          "[\"RoomsController\", :new, 6, 4, 7, 7]": 0,
+          "[\"RoomsController\", :show, 9, 4, 13, 7]": 0,
+          "[\"RoomsController\", :create, 15, 4, 16, 7]": 0,
+          "[\"RoomsController\", :edit, 18, 4, 19, 7]": 0,
+          "[\"RoomsController\", :update, 21, 4, 22, 7]": 0,
+          "[\"RoomsController\", :destroy, 24, 4, 25, 7]": 0
+        }
       },
       "/app/app/controllers/admin_controller.rb": {
         "lines": [
@@ -42,58 +88,84 @@
         "lines": [
           null,
           null,
-          1,
-          1,
-          1,
+          0,
+          0,
+          0,
           null,
           null
-        ]
+        ],
+        "branches": {},
+        "methods": {
+          "[\"AboutController\", :show, 5, 4, 5, 17]": 0
+        }
       },
       "/app/app/controllers/public/contact_controller.rb": {
         "lines": [
           null,
           null,
-          1,
-          1,
-          1,
+          0,
+          0,
+          0,
           null,
           null
-        ]
+        ],
+        "branches": {},
+        "methods": {
+          "[\"ContactController\", :show, 5, 4, 5, 17]": 0
+        }
       },
       "/app/app/controllers/public/help_requests_controller.rb": {
         "lines": [
           null,
           null,
-          1,
-          1,
-          1,
+          0,
+          0,
+          0,
           null,
           null
-        ]
+        ],
+        "branches": {},
+        "methods": {
+          "[\"HelpRequestsController\", :new, 5, 4, 5, 16]": 0
+        }
       },
       "/app/app/controllers/public/home_controller.rb": {
         "lines": [
           null,
           null,
-          1,
-          1,
-          1,
+          0,
+          0,
+          0,
           null,
           null
-        ]
+        ],
+        "branches": {},
+        "methods": {
+          "[\"HomeController\", :index, 5, 4, 5, 18]": 0
+        }
       },
       "/app/app/controllers/public/how_it_works_controller.rb": {
         "lines": [
           null,
           null,
-          1,
-          1,
-          1,
+          0,
+          0,
+          0,
           null,
+          null
+        ],
+        "branches": {},
+        "methods": {
+          "[\"HowItWorksController\", :show, 5, 4, 5, 17]": 0
+        }
+      },
+      "/app/app/helpers/admin/dashboard_helper.rb": {
+        "lines": [
+          1,
           null
         ]
       },
-      "/app/app/helpers/admin/dashboard_helper.rb": {
+      "/app/app/helpers/admin/rooms_helper.rb": {
         "lines": [
           1,
           null
@@ -134,7 +206,7 @@
           1,
           1,
           1,
-          6,
+          0,
           null,
           null,
           null
@@ -164,24 +236,28 @@
         "lines": [
           null,
           null,
-          1,
+          0,
           null,
           null,
           null,
           null,
           null,
           null
-        ]
+        ],
+        "branches": {},
+        "methods": {}
       },
       "/app/app/mailers/application_mailer.rb": {
         "lines": [
           null,
           null,
-          1,
-          1,
-          1,
+          0,
+          0,
+          0,
           null
-        ]
+        ],
+        "branches": {},
+        "methods": {}
       },
       "/app/app/models/admin_user.rb": {
         "lines": [
@@ -217,14 +293,358 @@
           null,
           1,
           6,
-          4,
+          6,
           null,
-          1,
+          0,
           null,
           null
         ]
       }
     },
-    "timestamp": 1786646178
+    "timestamp": 1786648110
+  },
+  "Unknown Test Framework": {
+    "coverage": {
+      "/app/app/components/public/navbar_component.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          null,
+          null
+        ],
+        "branches": {},
+        "methods": {}
+      },
+      "/app/app/controllers/admin/dashboard_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          null,
+          null,
+          null
+        ],
+        "branches": {},
+        "methods": {
+          "[\"DashboardController\", :show, 3, 4, 4, 7]": 0
+        }
+      },
+      "/app/app/controllers/admin/rooms_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          null,
+          null,
+          0,
+          null,
+          null,
+          0,
+          null,
+          null,
+          0,
+          null,
+          null,
+          null
+        ],
+        "branches": {},
+        "methods": {
+          "[\"RoomsController\", :index, 3, 4, 4, 7]": 0,
+          "[\"RoomsController\", :new, 6, 4, 7, 7]": 0,
+          "[\"RoomsController\", :show, 9, 4, 13, 7]": 0,
+          "[\"RoomsController\", :create, 15, 4, 16, 7]": 0,
+          "[\"RoomsController\", :edit, 18, 4, 19, 7]": 0,
+          "[\"RoomsController\", :update, 21, 4, 22, 7]": 0,
+          "[\"RoomsController\", :destroy, 24, 4, 25, 7]": 0
+        }
+      },
+      "/app/app/controllers/admin_controller.rb": {
+        "lines": [
+          0,
+          0,
+          null
+        ],
+        "branches": {},
+        "methods": {}
+      },
+      "/app/app/controllers/application_controller.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          null,
+          0,
+          null
+        ],
+        "branches": {},
+        "methods": {}
+      },
+      "/app/app/controllers/public/about_controller.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null
+        ],
+        "branches": {},
+        "methods": {
+          "[\"AboutController\", :show, 5, 4, 5, 17]": 0
+        }
+      },
+      "/app/app/controllers/public/contact_controller.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null
+        ],
+        "branches": {},
+        "methods": {
+          "[\"ContactController\", :show, 5, 4, 5, 17]": 0
+        }
+      },
+      "/app/app/controllers/public/help_requests_controller.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null
+        ],
+        "branches": {},
+        "methods": {
+          "[\"HelpRequestsController\", :new, 5, 4, 5, 16]": 0
+        }
+      },
+      "/app/app/controllers/public/home_controller.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null
+        ],
+        "branches": {},
+        "methods": {
+          "[\"HomeController\", :index, 5, 4, 5, 18]": 0
+        }
+      },
+      "/app/app/controllers/public/how_it_works_controller.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null
+        ],
+        "branches": {},
+        "methods": {
+          "[\"HowItWorksController\", :show, 5, 4, 5, 17]": 0
+        }
+      },
+      "/app/app/helpers/admin/dashboard_helper.rb": {
+        "lines": [
+          0,
+          null
+        ],
+        "branches": {},
+        "methods": {}
+      },
+      "/app/app/helpers/admin/rooms_helper.rb": {
+        "lines": [
+          0,
+          null
+        ],
+        "branches": {},
+        "methods": {}
+      },
+      "/app/app/helpers/application_helper.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          null
+        ],
+        "branches": {},
+        "methods": {}
+      },
+      "/app/app/helpers/public/about_helper.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          null,
+          null
+        ],
+        "branches": {},
+        "methods": {}
+      },
+      "/app/app/helpers/public/contact_helper.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          null,
+          null
+        ],
+        "branches": {},
+        "methods": {}
+      },
+      "/app/app/helpers/public/help_requests_helper.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null
+        ],
+        "branches": {},
+        "methods": {
+          "[\"HelpRequestsHelper\", :help_request_page_title, 5, 4, 7, 7]": 0
+        }
+      },
+      "/app/app/helpers/public/home_helper.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          null,
+          null
+        ],
+        "branches": {},
+        "methods": {}
+      },
+      "/app/app/helpers/public/how_it_works_helper.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          null,
+          null
+        ],
+        "branches": {},
+        "methods": {}
+      },
+      "/app/app/jobs/application_job.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "branches": {},
+        "methods": {}
+      },
+      "/app/app/mailers/application_mailer.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          null
+        ],
+        "branches": {},
+        "methods": {}
+      },
+      "/app/app/models/admin_user.rb": {
+        "lines": [
+          0,
+          null,
+          null,
+          0,
+          null,
+          null
+        ],
+        "branches": {},
+        "methods": {}
+      },
+      "/app/app/models/application_record.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          null
+        ],
+        "branches": {},
+        "methods": {}
+      },
+      "/app/app/models/room.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null
+        ],
+        "branches": {
+          "[:if, 0, 13, 4, 13, 32]": {
+            "[:then, 1, 13, 4, 13, 10]": 0,
+            "[:else, 2, 13, 4, 13, 32]": 0
+          },
+          "[:if, 3, 14, 4, 14, 49]": {
+            "[:then, 4, 14, 4, 14, 10]": 0,
+            "[:else, 5, 14, 4, 14, 49]": 0
+          }
+        },
+        "methods": {
+          "[\"Room\", :meeting_url_must_be_google_meet, 12, 2, 17, 5]": 0
+        }
+      }
+    },
+    "timestamp": 1786647699
   }
 }

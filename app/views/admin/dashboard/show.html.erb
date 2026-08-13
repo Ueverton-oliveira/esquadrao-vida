@@ -1,2 +1,24 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<main>
+  <h1>Painel Administrativo</h1>
+
+  <section>
+    <h2>Salas</h2>
+
+    <div>
+      <strong><%= @rooms_count %></strong>
+      <span>Total</span>
+    </div>
+
+    <div>
+      <strong><%= @active_rooms_count %></strong>
+      <span>Ativas</span>
+    </div>
+
+    <div>
+      <strong><%= @inactive_rooms_count %></strong>
+      <span>Inativas</span>
+    </div>
+
+    <%= link_to "Gerenciar Salas", admin_rooms_path %>
+  </section>
+</main>

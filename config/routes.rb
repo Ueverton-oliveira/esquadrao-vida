@@ -3,9 +3,9 @@
 Rails.application.routes.draw do
   devise_for :admin_users
   root 'public/home#index'
-
   namespace :admin do
     root "dashboard#show"
+    resources :rooms
   end
 
   scope module: :public do
