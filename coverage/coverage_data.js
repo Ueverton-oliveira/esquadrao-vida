@@ -5,9 +5,9 @@ window.SIMPLECOV_DATA = {
     "simplecov_version": "1.0.3",
     "command_name": "RSpec",
     "project_name": "App",
-    "timestamp": "2026-08-13T18:17:33.819+00:00",
+    "timestamp": "2026-08-13T18:36:18.466+00:00",
     "root": "/app",
-    "commit": "495a7c0362f9ce26890432b5c62b8aafc7b189b2",
+    "commit": "fdf6d51de5d041c203e3110b4f8f039816a179c0",
     "primary_coverage": "line",
     "line_coverage": true,
     "branch_coverage": false,
@@ -15,12 +15,12 @@ window.SIMPLECOV_DATA = {
   },
   "total": {
     "lines": {
-      "covered": 21,
-      "missed": 21,
-      "omitted": 57,
-      "total": 42,
-      "percent": 50.0,
-      "strength": 0.6904761904761905
+      "covered": 56,
+      "missed": 0,
+      "omitted": 83,
+      "total": 56,
+      "percent": 100.0,
+      "strength": 1.2321428571428572
     }
   },
   "coverage": {
@@ -36,15 +36,55 @@ window.SIMPLECOV_DATA = {
       "lines": [
         null,
         null,
-        0,
-        0,
+        1,
+        1,
         null,
         null
       ],
-      "lines_covered_percent": 0.0,
-      "covered_lines": 0,
-      "missed_lines": 2,
+      "lines_covered_percent": 100.0,
+      "covered_lines": 2,
+      "missed_lines": 0,
       "omitted_lines": 4,
+      "total_lines": 2
+    },
+    "app/controllers/admin/dashboard_controller.rb": {
+      "source": [
+        "module Admin",
+        "  class DashboardController < AdminController",
+        "    def show",
+        "    end",
+        "  end",
+        "end"
+      ],
+      "lines": [
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "lines_covered_percent": 100.0,
+      "covered_lines": 3,
+      "missed_lines": 0,
+      "omitted_lines": 3,
+      "total_lines": 3
+    },
+    "app/controllers/admin_controller.rb": {
+      "source": [
+        "class AdminController < ApplicationController",
+        "  before_action :authenticate_admin_user!",
+        "end"
+      ],
+      "lines": [
+        1,
+        1,
+        null
+      ],
+      "lines_covered_percent": 100.0,
+      "covered_lines": 2,
+      "missed_lines": 0,
+      "omitted_lines": 1,
       "total_lines": 2
     },
     "app/controllers/application_controller.rb": {
@@ -59,54 +99,66 @@ window.SIMPLECOV_DATA = {
       "lines": [
         null,
         null,
-        0,
+        1,
         null,
-        0,
+        1,
         null
       ],
-      "lines_covered_percent": 0.0,
-      "covered_lines": 0,
-      "missed_lines": 2,
+      "lines_covered_percent": 100.0,
+      "covered_lines": 2,
+      "missed_lines": 0,
       "omitted_lines": 4,
       "total_lines": 2
     },
     "app/controllers/public/about_controller.rb": {
       "source": [
-        "class Public::AboutController < ApplicationController",
-        "  def show",
+        "# frozen_string_literal: true",
+        "",
+        "module Public",
+        "  class AboutController < ApplicationController",
+        "    def show; end",
         "  end",
         "end"
       ],
       "lines": [
-        0,
-        0,
+        null,
+        null,
+        1,
+        1,
+        1,
         null,
         null
       ],
-      "lines_covered_percent": 0.0,
-      "covered_lines": 0,
-      "missed_lines": 2,
-      "omitted_lines": 2,
-      "total_lines": 2
+      "lines_covered_percent": 100.0,
+      "covered_lines": 3,
+      "missed_lines": 0,
+      "omitted_lines": 4,
+      "total_lines": 3
     },
     "app/controllers/public/contact_controller.rb": {
       "source": [
-        "class Public::ContactController < ApplicationController",
-        "  def show",
+        "# frozen_string_literal: true",
+        "",
+        "module Public",
+        "  class ContactController < ApplicationController",
+        "    def show; end",
         "  end",
         "end"
       ],
       "lines": [
-        0,
-        0,
+        null,
+        null,
+        1,
+        1,
+        1,
         null,
         null
       ],
-      "lines_covered_percent": 0.0,
-      "covered_lines": 0,
-      "missed_lines": 2,
-      "omitted_lines": 2,
-      "total_lines": 2
+      "lines_covered_percent": 100.0,
+      "covered_lines": 3,
+      "missed_lines": 0,
+      "omitted_lines": 4,
+      "total_lines": 3
     },
     "app/controllers/public/help_requests_controller.rb": {
       "source": [
@@ -121,15 +173,15 @@ window.SIMPLECOV_DATA = {
       "lines": [
         null,
         null,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
         null,
         null
       ],
-      "lines_covered_percent": 0.0,
-      "covered_lines": 0,
-      "missed_lines": 3,
+      "lines_covered_percent": 100.0,
+      "covered_lines": 3,
+      "missed_lines": 0,
       "omitted_lines": 4,
       "total_lines": 3
     },
@@ -146,36 +198,57 @@ window.SIMPLECOV_DATA = {
       "lines": [
         null,
         null,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
         null,
         null
       ],
-      "lines_covered_percent": 0.0,
-      "covered_lines": 0,
-      "missed_lines": 3,
+      "lines_covered_percent": 100.0,
+      "covered_lines": 3,
+      "missed_lines": 0,
       "omitted_lines": 4,
       "total_lines": 3
     },
     "app/controllers/public/how_it_works_controller.rb": {
       "source": [
-        "class Public::HowItWorksController < ApplicationController",
-        "  def show",
+        "# frozen_string_literal: true",
+        "",
+        "module Public",
+        "  class HowItWorksController < ApplicationController",
+        "    def show; end",
         "  end",
         "end"
       ],
       "lines": [
-        0,
-        0,
+        null,
+        null,
+        1,
+        1,
+        1,
         null,
         null
       ],
-      "lines_covered_percent": 0.0,
-      "covered_lines": 0,
-      "missed_lines": 2,
-      "omitted_lines": 2,
-      "total_lines": 2
+      "lines_covered_percent": 100.0,
+      "covered_lines": 3,
+      "missed_lines": 0,
+      "omitted_lines": 4,
+      "total_lines": 3
+    },
+    "app/helpers/admin/dashboard_helper.rb": {
+      "source": [
+        "module Admin::DashboardHelper",
+        "end"
+      ],
+      "lines": [
+        1,
+        null
+      ],
+      "lines_covered_percent": 100.0,
+      "covered_lines": 1,
+      "missed_lines": 0,
+      "omitted_lines": 1,
+      "total_lines": 1
     },
     "app/helpers/application_helper.rb": {
       "source": [
@@ -198,33 +271,49 @@ window.SIMPLECOV_DATA = {
     },
     "app/helpers/public/about_helper.rb": {
       "source": [
-        "module Public::AboutHelper",
+        "# frozen_string_literal: true",
+        "",
+        "module Public",
+        "  module AboutHelper",
+        "  end",
         "end"
       ],
       "lines": [
+        null,
+        null,
         1,
+        1,
+        null,
         null
       ],
       "lines_covered_percent": 100.0,
-      "covered_lines": 1,
+      "covered_lines": 2,
       "missed_lines": 0,
-      "omitted_lines": 1,
-      "total_lines": 1
+      "omitted_lines": 4,
+      "total_lines": 2
     },
     "app/helpers/public/contact_helper.rb": {
       "source": [
-        "module Public::ContactHelper",
+        "# frozen_string_literal: true",
+        "",
+        "module Public",
+        "  module ContactHelper",
+        "  end",
         "end"
       ],
       "lines": [
+        null,
+        null,
         1,
+        1,
+        null,
         null
       ],
       "lines_covered_percent": 100.0,
-      "covered_lines": 1,
+      "covered_lines": 2,
       "missed_lines": 0,
-      "omitted_lines": 1,
-      "total_lines": 1
+      "omitted_lines": 4,
+      "total_lines": 2
     },
     "app/helpers/public/help_requests_helper.rb": {
       "source": [
@@ -244,14 +333,14 @@ window.SIMPLECOV_DATA = {
         1,
         1,
         1,
-        0,
+        6,
         null,
         null,
         null
       ],
-      "lines_covered_percent": 75.0,
-      "covered_lines": 3,
-      "missed_lines": 1,
+      "lines_covered_percent": 100.0,
+      "covered_lines": 4,
+      "missed_lines": 0,
       "omitted_lines": 5,
       "total_lines": 4
     },
@@ -280,18 +369,26 @@ window.SIMPLECOV_DATA = {
     },
     "app/helpers/public/how_it_works_helper.rb": {
       "source": [
-        "module Public::HowItWorksHelper",
+        "# frozen_string_literal: true",
+        "",
+        "module Public",
+        "  module HowItWorksHelper",
+        "  end",
         "end"
       ],
       "lines": [
+        null,
+        null,
         1,
+        1,
+        null,
         null
       ],
       "lines_covered_percent": 100.0,
-      "covered_lines": 1,
+      "covered_lines": 2,
       "missed_lines": 0,
-      "omitted_lines": 1,
-      "total_lines": 1
+      "omitted_lines": 4,
+      "total_lines": 2
     },
     "app/jobs/application_job.rb": {
       "source": [
@@ -308,7 +405,7 @@ window.SIMPLECOV_DATA = {
       "lines": [
         null,
         null,
-        0,
+        1,
         null,
         null,
         null,
@@ -316,9 +413,9 @@ window.SIMPLECOV_DATA = {
         null,
         null
       ],
-      "lines_covered_percent": 0.0,
-      "covered_lines": 0,
-      "missed_lines": 1,
+      "lines_covered_percent": 100.0,
+      "covered_lines": 1,
+      "missed_lines": 0,
       "omitted_lines": 8,
       "total_lines": 1
     },
@@ -334,16 +431,39 @@ window.SIMPLECOV_DATA = {
       "lines": [
         null,
         null,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
         null
       ],
-      "lines_covered_percent": 0.0,
-      "covered_lines": 0,
-      "missed_lines": 3,
+      "lines_covered_percent": 100.0,
+      "covered_lines": 3,
+      "missed_lines": 0,
       "omitted_lines": 3,
       "total_lines": 3
+    },
+    "app/models/admin_user.rb": {
+      "source": [
+        "class AdminUser < ApplicationRecord",
+        "  # Include default devise modules. Others available are:",
+        "  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable",
+        "  devise :database_authenticatable, :registerable,",
+        "         :recoverable, :rememberable, :validatable",
+        "end"
+      ],
+      "lines": [
+        1,
+        null,
+        null,
+        1,
+        null,
+        null
+      ],
+      "lines_covered_percent": 100.0,
+      "covered_lines": 2,
+      "missed_lines": 0,
+      "omitted_lines": 4,
+      "total_lines": 2
     },
     "app/models/application_record.rb": {
       "source": [
@@ -368,6 +488,8 @@ window.SIMPLECOV_DATA = {
     },
     "app/models/room.rb": {
       "source": [
+        "# frozen_string_literal: true",
+        "",
         "class Room < ApplicationRecord",
         "  GOOGLE_MEET_URL = %r{\\Ahttps://meet\\.google\\.com/[a-z0-9-]+\\z}i",
         "",
@@ -381,11 +503,13 @@ window.SIMPLECOV_DATA = {
         "    return if meeting_url.blank?",
         "    return if meeting_url.match?(GOOGLE_MEET_URL)",
         "",
-        "    errors.add(:meeting_url, \"must be a Google Meet URL\")",
+        "    errors.add(:meeting_url, 'must be a Google Meet URL')",
         "  end",
         "end"
       ],
       "lines": [
+        null,
+        null,
         1,
         1,
         null,
@@ -406,21 +530,23 @@ window.SIMPLECOV_DATA = {
       "lines_covered_percent": 100.0,
       "covered_lines": 10,
       "missed_lines": 0,
-      "omitted_lines": 6,
+      "omitted_lines": 8,
       "total_lines": 10
     }
   },
   "groups": {
     "Controllers": {
       "lines": {
-        "covered": 0,
-        "missed": 14,
-        "omitted": 18,
-        "total": 14,
-        "percent": 0.0,
-        "strength": 0.0
+        "covered": 22,
+        "missed": 0,
+        "omitted": 28,
+        "total": 22,
+        "percent": 100.0,
+        "strength": 1.0
       },
       "files": [
+        "app/controllers/admin/dashboard_controller.rb",
+        "app/controllers/admin_controller.rb",
         "app/controllers/application_controller.rb",
         "app/controllers/public/about_controller.rb",
         "app/controllers/public/contact_controller.rb",
@@ -442,26 +568,27 @@ window.SIMPLECOV_DATA = {
     },
     "Models": {
       "lines": {
-        "covered": 12,
+        "covered": 14,
         "missed": 0,
-        "omitted": 9,
-        "total": 12,
+        "omitted": 15,
+        "total": 14,
         "percent": 100.0,
-        "strength": 1.6666666666666667
+        "strength": 1.5714285714285714
       },
       "files": [
+        "app/models/admin_user.rb",
         "app/models/application_record.rb",
         "app/models/room.rb"
       ]
     },
     "Mailers": {
       "lines": {
-        "covered": 0,
-        "missed": 3,
+        "covered": 3,
+        "missed": 0,
         "omitted": 3,
         "total": 3,
-        "percent": 0.0,
-        "strength": 0.0
+        "percent": 100.0,
+        "strength": 1.0
       },
       "files": [
         "app/mailers/application_mailer.rb"
@@ -469,14 +596,15 @@ window.SIMPLECOV_DATA = {
     },
     "Helpers": {
       "lines": {
-        "covered": 9,
-        "missed": 1,
-        "omitted": 15,
-        "total": 10,
-        "percent": 90.0,
-        "strength": 0.9
+        "covered": 14,
+        "missed": 0,
+        "omitted": 25,
+        "total": 14,
+        "percent": 100.0,
+        "strength": 1.3571428571428572
       },
       "files": [
+        "app/helpers/admin/dashboard_helper.rb",
         "app/helpers/application_helper.rb",
         "app/helpers/public/about_helper.rb",
         "app/helpers/public/contact_helper.rb",
@@ -487,12 +615,12 @@ window.SIMPLECOV_DATA = {
     },
     "Jobs": {
       "lines": {
-        "covered": 0,
-        "missed": 1,
+        "covered": 1,
+        "missed": 0,
         "omitted": 8,
         "total": 1,
-        "percent": 0.0,
-        "strength": 0.0
+        "percent": 100.0,
+        "strength": 1.0
       },
       "files": [
         "app/jobs/application_job.rb"
@@ -511,12 +639,12 @@ window.SIMPLECOV_DATA = {
     },
     "Ungrouped": {
       "lines": {
-        "covered": 0,
-        "missed": 2,
+        "covered": 2,
+        "missed": 0,
         "omitted": 4,
         "total": 2,
-        "percent": 0.0,
-        "strength": 0.0
+        "percent": 100.0,
+        "strength": 1.0
       },
       "files": [
         "app/components/public/navbar_component.rb"
