@@ -1,2 +1,6 @@
-module Public::HowItWorksHelper
+# frozen_string_literal: true
+
+module Public
+  module HowItWorksHelper
+  end
 end
