@@ -5,15 +5,18 @@ module Admin
     end
 
     def new
-    end
-
-    def show
-      @rooms_count = Room.count
-      @active_rooms_count = Room.where(active: true).count
-      @inactive_rooms_count = Room.where(active: false).count
+      @room = Room.new
     end
 
     def create
+      @room = Room.new(room_params)
+
+      if @room.save
+        redirect_to admin_rooms_path,
+                    notice: "Sala criada com sucesso."
+      else
+        render :new, status: :unprocessable_entity
+      end
     end
 
     def edit
@@ -23,6 +26,13 @@ module Admin
     end
 
     def destroy
+    end
+
+    private
+
+    def room_params
+      params.require(:room)
+            .permit(:name, :meeting_url)
     end
   end
 end

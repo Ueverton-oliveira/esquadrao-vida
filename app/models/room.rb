@@ -13,6 +13,6 @@ class Room < ApplicationRecord
     return if meeting_url.blank?
     return if meeting_url.match?(GOOGLE_MEET_URL)
 
-    errors.add(:meeting_url, 'must be a Google Meet URL')
+    errors.add(:meeting_url, "must be a Google Meet URL")
   end
 end

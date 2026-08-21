@@ -1,0 +1,31 @@
+<h1>Nova Sala</h1>
+<% if @room.errors.any? %>
+  <div>
+    <h2>Erros encontrados:</h2>
+
+    <ul>
+      <% @room.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+
+<%= form_with model: [:admin, @room] do |form| %>
+
+  <div>
+    <%= form.label :name, "Nome" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :meeting_url, "Link Google Meet" %>
+    <%= form.text_field :meeting_url %>
+  </div>
+
+  <div>
+    <%= form.submit "Salvar Sala" %>
+  </div>
+
+<% end %>
