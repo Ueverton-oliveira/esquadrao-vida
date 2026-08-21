@@ -1,6 +1,7 @@
 module Admin
   class RoomsController < AdminController
     def index
+      @rooms = Room.order(created_at: :desc)
     end
 
     def new

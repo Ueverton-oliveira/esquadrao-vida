@@ -3,11 +3,11 @@ window.SIMPLECOV_DATA = {
   "meta": {
     "schema_version": "1.0",
     "simplecov_version": "1.0.3",
-    "command_name": "RSpec, Unknown Test Framework",
+    "command_name": "RSpec",
     "project_name": "App",
-    "timestamp": "2026-08-13T19:08:30.078+00:00",
+    "timestamp": "2026-08-21T22:56:43.466+00:00",
     "root": "/app",
-    "commit": "ae140686b97e1634cd972d907c395d16885995be",
+    "commit": "16b0bf0442ed12b336793288931ced5404e70020",
     "primary_coverage": "line",
     "line_coverage": true,
     "branch_coverage": false,
@@ -15,12 +15,12 @@ window.SIMPLECOV_DATA = {
   },
   "total": {
     "lines": {
-      "covered": 37,
-      "missed": 35,
+      "covered": 70,
+      "missed": 3,
       "omitted": 99,
-      "total": 72,
-      "percent": 51.388888888888886,
-      "strength": 0.8194444444444444
+      "total": 73,
+      "percent": 95.89041095890411,
+      "strength": 1.643835616438356
     }
   },
   "coverage": {
@@ -36,14 +36,14 @@ window.SIMPLECOV_DATA = {
       "lines": [
         null,
         null,
-        0,
-        0,
+        1,
+        1,
         null,
         null
       ],
-      "lines_covered_percent": 0.0,
-      "covered_lines": 0,
-      "missed_lines": 2,
+      "lines_covered_percent": 100.0,
+      "covered_lines": 2,
+      "missed_lines": 0,
       "omitted_lines": 4,
       "total_lines": 2
     },
@@ -81,6 +81,7 @@ window.SIMPLECOV_DATA = {
         "module Admin",
         "  class RoomsController < AdminController",
         "    def index",
+        "      @rooms = Room.order(created_at: :desc)",
         "    end",
         "",
         "    def new",
@@ -107,39 +108,40 @@ window.SIMPLECOV_DATA = {
         "end"
       ],
       "lines": [
+        1,
+        1,
+        1,
+        6,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
         0,
         0,
         0,
         null,
         null,
-        0,
+        1,
         null,
         null,
-        0,
-        0,
-        0,
-        0,
+        1,
         null,
         null,
-        0,
+        1,
         null,
         null,
-        0,
-        null,
-        null,
-        0,
-        null,
-        null,
-        0,
+        1,
         null,
         null,
         null
       ],
-      "lines_covered_percent": 0.0,
-      "covered_lines": 0,
-      "missed_lines": 12,
+      "lines_covered_percent": 76.92307692307692,
+      "covered_lines": 10,
+      "missed_lines": 3,
       "omitted_lines": 15,
-      "total_lines": 12
+      "total_lines": 13
     },
     "app/controllers/admin_controller.rb": {
       "source": [
@@ -194,15 +196,15 @@ window.SIMPLECOV_DATA = {
       "lines": [
         null,
         null,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
         null,
         null
       ],
-      "lines_covered_percent": 0.0,
-      "covered_lines": 0,
-      "missed_lines": 3,
+      "lines_covered_percent": 100.0,
+      "covered_lines": 3,
+      "missed_lines": 0,
       "omitted_lines": 4,
       "total_lines": 3
     },
@@ -219,15 +221,15 @@ window.SIMPLECOV_DATA = {
       "lines": [
         null,
         null,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
         null,
         null
       ],
-      "lines_covered_percent": 0.0,
-      "covered_lines": 0,
-      "missed_lines": 3,
+      "lines_covered_percent": 100.0,
+      "covered_lines": 3,
+      "missed_lines": 0,
       "omitted_lines": 4,
       "total_lines": 3
     },
@@ -244,15 +246,15 @@ window.SIMPLECOV_DATA = {
       "lines": [
         null,
         null,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
         null,
         null
       ],
-      "lines_covered_percent": 0.0,
-      "covered_lines": 0,
-      "missed_lines": 3,
+      "lines_covered_percent": 100.0,
+      "covered_lines": 3,
+      "missed_lines": 0,
       "omitted_lines": 4,
       "total_lines": 3
     },
@@ -269,15 +271,15 @@ window.SIMPLECOV_DATA = {
       "lines": [
         null,
         null,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
         null,
         null
       ],
-      "lines_covered_percent": 0.0,
-      "covered_lines": 0,
-      "missed_lines": 3,
+      "lines_covered_percent": 100.0,
+      "covered_lines": 3,
+      "missed_lines": 0,
       "omitted_lines": 4,
       "total_lines": 3
     },
@@ -294,15 +296,15 @@ window.SIMPLECOV_DATA = {
       "lines": [
         null,
         null,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
         null,
         null
       ],
-      "lines_covered_percent": 0.0,
-      "covered_lines": 0,
-      "missed_lines": 3,
+      "lines_covered_percent": 100.0,
+      "covered_lines": 3,
+      "missed_lines": 0,
       "omitted_lines": 4,
       "total_lines": 3
     },
@@ -419,14 +421,14 @@ window.SIMPLECOV_DATA = {
         1,
         1,
         1,
-        0,
+        6,
         null,
         null,
         null
       ],
-      "lines_covered_percent": 75.0,
-      "covered_lines": 3,
-      "missed_lines": 1,
+      "lines_covered_percent": 100.0,
+      "covered_lines": 4,
+      "missed_lines": 0,
       "omitted_lines": 5,
       "total_lines": 4
     },
@@ -491,7 +493,7 @@ window.SIMPLECOV_DATA = {
       "lines": [
         null,
         null,
-        0,
+        1,
         null,
         null,
         null,
@@ -499,9 +501,9 @@ window.SIMPLECOV_DATA = {
         null,
         null
       ],
-      "lines_covered_percent": 0.0,
-      "covered_lines": 0,
-      "missed_lines": 1,
+      "lines_covered_percent": 100.0,
+      "covered_lines": 1,
+      "missed_lines": 0,
       "omitted_lines": 8,
       "total_lines": 1
     },
@@ -517,14 +519,14 @@ window.SIMPLECOV_DATA = {
       "lines": [
         null,
         null,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
         null
       ],
-      "lines_covered_percent": 0.0,
-      "covered_lines": 0,
-      "missed_lines": 3,
+      "lines_covered_percent": 100.0,
+      "covered_lines": 3,
+      "missed_lines": 0,
       "omitted_lines": 3,
       "total_lines": 3
     },
@@ -606,16 +608,16 @@ window.SIMPLECOV_DATA = {
         1,
         null,
         1,
-        6,
-        6,
+        16,
+        14,
         null,
-        0,
+        1,
         null,
         null
       ],
-      "lines_covered_percent": 90.0,
-      "covered_lines": 9,
-      "missed_lines": 1,
+      "lines_covered_percent": 100.0,
+      "covered_lines": 10,
+      "missed_lines": 0,
       "omitted_lines": 8,
       "total_lines": 10
     }
@@ -623,12 +625,12 @@ window.SIMPLECOV_DATA = {
   "groups": {
     "Controllers": {
       "lines": {
-        "covered": 10,
-        "missed": 27,
+        "covered": 35,
+        "missed": 3,
         "omitted": 43,
-        "total": 37,
-        "percent": 27.027027027027028,
-        "strength": 0.5945945945945946
+        "total": 38,
+        "percent": 92.10526315789474,
+        "strength": 1.368421052631579
       },
       "files": [
         "app/controllers/admin/dashboard_controller.rb",
@@ -655,12 +657,12 @@ window.SIMPLECOV_DATA = {
     },
     "Models": {
       "lines": {
-        "covered": 13,
-        "missed": 1,
+        "covered": 14,
+        "missed": 0,
         "omitted": 15,
         "total": 14,
-        "percent": 92.85714285714286,
-        "strength": 1.6428571428571428
+        "percent": 100.0,
+        "strength": 3.0
       },
       "files": [
         "app/models/admin_user.rb",
@@ -670,12 +672,12 @@ window.SIMPLECOV_DATA = {
     },
     "Mailers": {
       "lines": {
-        "covered": 0,
-        "missed": 3,
+        "covered": 3,
+        "missed": 0,
         "omitted": 3,
         "total": 3,
-        "percent": 0.0,
-        "strength": 0.0
+        "percent": 100.0,
+        "strength": 1.0
       },
       "files": [
         "app/mailers/application_mailer.rb"
@@ -683,12 +685,12 @@ window.SIMPLECOV_DATA = {
     },
     "Helpers": {
       "lines": {
-        "covered": 14,
-        "missed": 1,
+        "covered": 15,
+        "missed": 0,
         "omitted": 26,
         "total": 15,
-        "percent": 93.33333333333333,
-        "strength": 0.9333333333333333
+        "percent": 100.0,
+        "strength": 1.3333333333333333
       },
       "files": [
         "app/helpers/admin/dashboard_helper.rb",
@@ -703,12 +705,12 @@ window.SIMPLECOV_DATA = {
     },
     "Jobs": {
       "lines": {
-        "covered": 0,
-        "missed": 1,
+        "covered": 1,
+        "missed": 0,
         "omitted": 8,
         "total": 1,
-        "percent": 0.0,
-        "strength": 0.0
+        "percent": 100.0,
+        "strength": 1.0
       },
       "files": [
         "app/jobs/application_job.rb"
@@ -727,12 +729,12 @@ window.SIMPLECOV_DATA = {
     },
     "Ungrouped": {
       "lines": {
-        "covered": 0,
-        "missed": 2,
+        "covered": 2,
+        "missed": 0,
         "omitted": 4,
         "total": 2,
-        "percent": 0.0,
-        "strength": 0.0
+        "percent": 100.0,
+        "strength": 1.0
       },
       "files": [
         "app/components/public/navbar_component.rb"
