@@ -66,7 +66,7 @@ end
 group :development do
   gem 'brakeman', require: false
   gem 'bullet'
-  gem 'rubocop', '~> 1.81', require: false
+  gem 'rubocop', '~> 1.90', require: false
   gem 'rubocop-performance', '~> 1.25', require: false
   gem 'rubocop-rails', '~> 2.36', require: false
 end
